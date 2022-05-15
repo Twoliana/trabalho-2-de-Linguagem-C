@@ -15,7 +15,7 @@ char compress(char s[]){
 */
 
 /*
-char compress(char s[]){
+char *compress(char s[]){
     int j = 0;
     for (int i=0; s[i]!= '\0'; i++)
         if(s[i] != ' '){
@@ -27,7 +27,7 @@ char compress(char s[]){
 */
 
 int main (void){
-    char text [] = "um,dois,tres. ";
+    char text [] = " um, dois, tres. ";
     //char v [20];
     int j = 0;
     for(int i=0; text[i] != '\0'; i++)
