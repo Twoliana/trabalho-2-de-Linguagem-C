@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-struct pair
+struct Pair
 {
   int min, max;
-} Pair;
+};
 
 /*
 int getmm(int v[], Pair){
@@ -55,10 +55,12 @@ int main (void){
 
 int getmm(int x[]){
 
-     int n =0;
+    int n =0;
     int min, max;
     for (int i = 0; x[i] != '\0';i++){
-        if(x[i]< min)puts("chegou");
+        if(x[i]< min){
+            min = x[i]; return min;
+            }
 
         if (x[i]> min) max++;
         puts("chegou");
@@ -79,8 +81,8 @@ int getmm(int x[]){
 int main (void){
 
     int v[9] = {5, 7, 2, 8, -3, 1, 9, 6, 4};
-    int *getmm = (v);
-    printf("minimum item: %d\n", *getmm);
+    int getmm = (v);
+    printf("minimum item: %d\n", getmm);
     //printf("maximum item: %+d\n", Pair.max);
 
     return 0;
