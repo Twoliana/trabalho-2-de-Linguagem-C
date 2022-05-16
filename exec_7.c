@@ -12,8 +12,7 @@ void printg(Geo g){
 }  
 
 void setLoc(char *loc, Geo *g){
-   // printf("{%s, %.3f, %.3f}\n", loc, g->lat, g->lon);
-    printf("{%s, %.3f, %.3f}\n", loc, (*g).lat, (*g).lon);
+    *loc= loc, (*g).lat, (*g).lon;
 }  
 
 int main(void) {

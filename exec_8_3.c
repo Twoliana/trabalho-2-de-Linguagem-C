@@ -6,9 +6,8 @@ char *compress(char s[]){
         if(s[i] != ' '){
             s[j] = s[i];
             j++;
-            //printf("%d", i);
         }
-        return s;
+    return s;
 }
 
 int main (void){
