@@ -5,8 +5,8 @@ char *compress(char s[]){
     for (int i=0; s[i]!='\0'; i++)
         if(s[i] != ' '){
             s[j] = s[i];
-            j++;
-        }
+            j++;}
+    s[j] = '\0';
     return s;
 }
 
